@@ -1,0 +1,36 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "This is a test app for to show the benefits of webpack",
+  "main": "webpack.config.js",
+  "scripts": {
+    "commit": "git add . && git cz ",
+    "push": "npm run commit && git push origin master",
+    "webpack:dev": "webpack --mode development ./assets/js/main.js --output ./dist/bundle.js",
+    "webpack:prod": "webpack --mode production ./assets/js/main.js --output ./dist/bundle.js"
+  },
+  "keywords": [
+    "webpack",
+    "bundle",
+    "optimizations",
+    "speed",
+    "performance",
+    "code-split",
+    "tree-shake"
+  ],
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "author": "Obinna Odirionye",
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
